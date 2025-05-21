@@ -48,25 +48,28 @@ jQuery(document).ready(function($) {
         });
 
         $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:30,
-            responsiveClass:true,
-            responsive:{
-                0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:2,
-                    nav:false
-                },
-                1000:{
-                    items:3,
-                    nav:true,
-                    loop:false
-                }
-            }
-        })
+    loop: true,
+    margin: 30,
+    responsiveClass: true,
+    touchDrag: true,          // ← enable touch dragging
+    mouseDrag: true,          // ← optional, for desktops
+    pullDrag: true,           // ← allow finger pull
+    freeDrag: false,          // ← set to true if you want inertial scroll
+    dots: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 2,
+        },
+        1000: {
+            items: 3,
+        }
+    }
+});
+
 
 
 
